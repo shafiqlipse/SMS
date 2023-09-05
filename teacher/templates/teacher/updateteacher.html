@@ -1,0 +1,75 @@
+{% extends 'dashboard/dashboard.html' %}
+
+<!--just stop going -->
+{% block title %}Update profile{% endblock %}
+<!--just stop going -->
+{% block content %}
+
+<div class="create-profile-page">
+  <div class="new-profile">
+    <h1>Add new profile</h1>
+    <hr />
+    <div class="profile-form">
+      <form
+        action=""
+        method="POST"
+        enctype="multipart/form-data"
+        class="add-profile"
+      >
+        {% csrf_token %}
+        <h3>profile's inprofile_formation</h3>
+        <hr />
+        <div class="fields grid3">
+          <div class="field">
+            <h5 class="label">First name</h5>
+            <div class="fieldplace">{{profile_form.first_name}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Last name</h5>
+            <div class="fieldplace">{{profile_form.last_name}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Role</h5>
+            <div class="fieldplace">{{profile_form.role}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Classes</h5>
+            <div class="fieldplace">{{profile_form.classes}}</div>
+          </div>
+
+          <div class="field">
+            <h5 class="label">Subjects</h5>
+            <div class="fieldplace ">{{profile_form.subjects}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Sex</h5>
+            <div class="fieldplace">{{profile_form.gender}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Bio</h5>
+            <div class="fieldplace">{{profile_form.bio}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Interests</h5>
+            <div class="fieldplace">{{profile_form.interests}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">memberships</h5>
+            <div class="fieldplace">{{profile_form.memberships}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Address</h5>
+            <div class="fieldplace">{{profile_form.address}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Picture</h5>
+            <div class="fieldplace">{{profile_form.profile_picture}}</div>
+          </div>
+        </div>
+
+        <button type="submit">Update profile</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %} z

@@ -1,0 +1,79 @@
+{% extends 'dashboard/dashboard.html' %}
+<!--just stop going -->
+{% block title %}Teachers{% endblock %}
+<!--just stop going -->
+{% block content %}
+<div class="teachers-page">
+  <div class="teachers">
+    <div class="top flex">
+      <h1>All teachers</h1>
+      <a href="" class="btn">Add new teacher</a>
+    </div>
+    <hr />
+    <div class="teacher-list">
+      <div class="filter">
+        <h3>Filter teachers</h3>
+        <div class="titles grid5">
+          <span>First name</span>
+          <span>Last name</span>
+          <span>Class</span>
+          <span>Gender </span>
+        </div>
+        <form action="" method="get" class="formis grid5">
+          {%for field in myFilter.form%} {{field}} {%endfor%}
+          <button type="submit">Filter</button>
+        </form>
+      </div>
+      <div class="titles grid6">
+        <span>photo</span>
+        <span>Names</span>
+        <span>Class</span>
+        <span>Gender </span>
+        <span>Parent/guardian</span> <span>Edit</span>
+      </div>
+      <div class="teachers-list">
+        {% if teachers %} {% for teacher in teachers%}
+        <div class="teacherl grid6">
+          <div class="photo fah">
+            <img src="{{teacher.profile_picture.url}}" />
+          </div>
+          <div class="names fah">
+            <a href="{%url 'profile' teacher.id%}"
+              ><span>{{teacher.first_name}}</span>
+              <span>{{teacher.last_name}}</span></a
+            >
+          </div>
+
+          <span class="fah">{{teacher.classroom}}</span>
+          <span class="fah">{{teacher.gender}}</span>
+          <span class="fah">{{teacher.Guardian}}</span>
+
+          <div class="actions flex">
+            <a href="{% url 'profile_update' teacher.id %}"
+              ><i class="fa fa-pencil"></i
+            ></a>
+            <i class="fa fa-trash"></i>
+          </div>
+        </div>
+        <hr />
+        {%endfor%} {% else %} nothing to show {% endif %}
+      </div>
+      <div class="pagination">
+        <span class="step-links">
+          {% if studs.has_previous %}
+          <a href="?page=1">&laquo; first</a>
+          <a href="?page={{ studs.previous_page_number }}">previous</a>
+          {% endif %}
+
+          <span class="current-page">{{ studs.number }}</span>
+
+          {% if studs.has_next %}
+          <a href="?page={{ studs.next_page_number }}">next</a>
+          <a href="?page={{ studs.paginator.num_pages }}">last &raquo;</a>
+          {% endif %}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

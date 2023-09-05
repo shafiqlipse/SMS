@@ -1,0 +1,203 @@
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title%}{%endblock%} | School</title>
+    <link rel="icon" href="{%static 'images/fav.png'%}" sizes="35x35" />
+    <link rel="stylesheet" href="{% static 'css/all.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/all.min.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/main/main.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/dashboard/dashboard.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/new/newstudent.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/list/studentlist.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/teacher/teachers.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/single/student.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/teacher/teacher.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/teacher/teacherupdate.css'%}" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="dashboardd">
+        <div class="dash-container flex">
+          <div
+            class="sidebarn sidebar"
+            onmouseover="Shrunk()"
+            onmouseleave="Shrink()"
+          >
+            <div class="logo">
+              <i class="fa fa-graduation"></i>
+              <span class="nav-text">sms</span>
+            </div>
+            <div class="sidebar-nav">
+              <li class="nav-item">
+                <a href="" class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-tachometer"></i>
+                    <span class="nav-text">Dashboard</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-user"></i>
+                    <span class="nav-text">Students</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </div>
+                <div class="navlist">
+                  <a href="{% url 'students'%}" class="listlink nav-text"
+                    ><i class="fa fa-chalkboard-teacher"></i>
+                    <span class="nav-text">All students</span></a
+                  ><a href="{% url 'newstudent'%}" class="listlink nav-text"
+                    ><i class="fa fa-chalkboard-teacher"></i>
+                    <span class="nav-text">New student</span></a
+                  ><a href="{% url 'newstudent'%}" class="listlink nav-text"
+                    ><i class="fa fa-chalkboard-teacher"></i>
+                    <span class="nav-text">Parents</span></a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'teachers'%}" class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-chalkboard-teacher"></i>
+                    <span class="nav-text">All Teachers</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="navlink">
+                  <div class="texture">
+                    <i class="fa-solid fa-school"></i>
+                    <span class="nav-text">Classes</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-book"></i>
+                    <span class="nav-text">Subjects</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </div>
+                <div class="navlist">
+                  <a href="" class="listlink nav-text"
+                    ><i class="fa fa-chalkboard-teacher"></i>
+                    <span class="nav-text">All subjects</span></a
+                  ><a href="" class="listlink nav-text"
+                    ><i class="fa fa-chalkboard-teacher"></i>
+                    <span class="nav-text">Statistics</span></a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-calendar"></i>
+                    <span class="nav-text">Timetable</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-bars"></i>
+                    <span class="nav-text">Exams</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-bar-chart"></i>
+                    <span class="nav-text">Reports</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-person"></i>
+                    <span class="nav-text">Attendance</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </div>
+                <div class="navlist">
+                  <a href="{% url 'attendance'%}" class="listlink nav-text"
+                    ><i class="fa fa-chalkboard-teacher"></i>
+                    <span class="nav-text">Attendance</span></a
+                  ><a href="{% url 'attendance_report'%}" class="listlink nav-text"
+                    ><i class="fa fa-chalkboard-teacher"></i>
+                    <span class="nav-text">Report</span></a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="navlink">
+                  <div class="texture">
+                    <i class="fa fa-cog"></i>
+                    <span class="nav-text">Settings</span>
+                  </div>
+                  <i class="fa fa-chevron-right nav-text"></i>
+                </div>
+              </li>
+            </div>
+          </div>
+          <div class="main-area">
+            <div class="top-meain flex">
+              <div class="welcome">Welcome to School Management System</div>
+              <div class="search-bar">
+                <form
+                  method="get"
+                  action="{% url 'searchResults' %}"
+                  class="search flex"
+                >
+                  <select name="search_category" id="id_search_category">
+                    <option value="">All</option>
+                    <option value="cases">students</option>
+                    <option value="tasks">Teachers</option>
+                    <option value="documents">Documents</option>
+                    <option value="clients">Clients</option>
+                  </select>
+                  <input
+                    type="text"
+                    name="search_query"
+                    maxlength="100"
+                    required=""
+                    id="id_search_query"
+                  />
+                  <button type="navmit">Search</button>
+                </form>
+              </div>
+              <div class="account flex">
+                <li class="account-link">
+                  <a href=""><i class="fa fa-bell"></i></a>
+                </li>
+                <li class="account-link">
+                  <a href=""><i class="fa fa-cog"></i></a>
+                </li>
+                <li class="account-link">
+                  <a href=""
+                    ><img src="{{user.userprofile.profile_picture.url}}" alt=""
+                  /></a>
+                </li>
+              </div>
+            </div>
+            <div class="content-area">{% block content %} {% endblock %}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'scripts/dashboard.js'%}"></script>
+    <script src="{% static 'scripts/tabs.js'%}"></script>
+  </body>
+</html>

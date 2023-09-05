@@ -1,0 +1,67 @@
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title%}{%endblock%} login | Ecom</title>
+    {% comment %} {% block title%}New product{%endblock%} {% endcomment %}
+
+    <link rel="stylesheet" href="{% static 'css/all.css'%}" />
+
+    <link rel="stylesheet" href="{% static 'css/main/main.css'%}" />
+
+    <link rel="stylesheet" href="{% static 'css/account/account.css'%}" />
+
+    <link rel="stylesheet" href="{% static 'css/all.min.css'%}" />
+    <!-- <link rel="stylesheet" href="{% static 'styles/sidebar/sidebar.css'%}"> -->
+  </head>
+  <body>
+    <div class="account flex">
+      <div class="flex-account flex">
+        <div class="lefta flex">
+          <h1>Welcome back</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+            doloremque. Officiis saepe fugit sapiente in eveniet. Sequi animi
+            illum quisquam?
+          </p>
+          <img src="{% static 'images/PngItem_1936781.png'%}" alt="" />
+        </div>
+        <div class="left">
+          <form method="POST" action="">
+            {% csrf_token %} {% comment %} {%form%} {% endcomment %}
+
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <br />
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <br />
+            <button type="submit" class="btn secondary">Login</button>
+            <div class="acct">
+              Have no account? <a href="{% url 'register'%}">register</a>
+              {%for message in messages%}
+              <p>{{message}}</p>
+              {%endfor%}
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

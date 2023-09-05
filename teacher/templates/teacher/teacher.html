@@ -1,0 +1,77 @@
+{% extends 'dashboard/dashboard.html' %}
+<!--just stop going -->
+{% block title %}{{teacher.first_name}}{% endblock %}
+<!--just stop going -->
+{% block content %}
+<div class="profile-page">
+  <div class="profile">
+    <div class="top flex">
+      <h1>{{profile.first_name}}'s Profile</h1>
+      <a href="{% url 'profile_update' teacher.id %}" class="btn"
+        >Update profile</a
+      >
+    </div>
+
+    <hr />
+    <div class="profile-details grid3">
+      <div class="profile-pic">
+        <img src="{{ profile.profile_picture.url}}" alt="" />
+      </div>
+      <div class="personal-info">
+        <h3>Teacher info</h3>
+        <div class="details">
+          <div class="element grid2">
+            <span>Names :</span>
+            <span>{{profile.first_name}} {{profile.last_name}}</span>
+          </div>
+
+          <div class="element grid2">
+            <span>Gender :</span>
+            <span>{{profile.gender}}</span>
+          </div>
+
+          <div class="element grid2">
+            <span>Admission Date :</span>
+            <span>{{profile.join_date}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Hobby :</span>
+            <span>{{profile.interests}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="personal-info">
+        <h3>Biography</h3>
+        <div class="details">
+          <div class="element ">
+            <span>{{profile.bio}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="tabs">
+        <div role="tablist" aria-label="Programming Languages">
+          <button role="tab" aria-selected="true" id="js">classes</button>
+          <button role="tab" aria-selected="false" id="ruby">Subjects</button>
+          <button role="tab" aria-selected="false" id="php">PHP</button>
+        </div>
+        <div role="tabpanel" aria-labelledby="js">
+          <div class="element">
+            {% for class in classes %}
+            <span>{{class.name}}</span>{% endfor %}
+          </div>
+        </div>
+        <div role="tabpanel" aria-labelledby="ruby" hidden>
+          <div class="element">
+            {% for subject in subjects %}
+            <span>{{subject.name}}</span>{% endfor %}
+          </div>
+        </div>
+        <div role="tabpanel" aria-labelledby="php" hidden>hello</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

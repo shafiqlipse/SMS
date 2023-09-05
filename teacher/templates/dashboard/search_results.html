@@ -1,0 +1,12 @@
+{% extends 'dashboard/dashboard.html' %}
+
+<!-- Display relevant information about the result -->
+{% block content %} {% if search_results %}
+<h2>Search Results:</h2>
+<ul>
+  {% for result in search_results %}
+  <li>{{ result }}</li>
+  <!-- Display relevant information about the result -->
+  {% endfor %}
+</ul>
+{% else %} No results to display {% endif %} {% endblock %}
