@@ -1,0 +1,80 @@
+$color: #063e60;
+
+.students-page {
+  width: 100%;
+  .students {
+    background-color: #fff;
+    // padding: 10px;
+    .top {
+      padding: 20px;
+      h1 {
+        font-size: 2em;
+        text-transform: capitalize;
+        font-weight: 500;
+
+        color: $color;
+      }
+      .btn {
+        padding: 10px;
+        border: 0;
+        background-color: $color;
+        color: white;
+      }
+    }
+    hr {
+      border: solid 1px #96969626;
+    }
+    .student-list {
+      .filter {
+        padding: 10px;
+        h3 {
+          font-size: 0.9em;
+          text-transform: capitalize;
+          font-weight: 500;
+
+          color: $color;
+        }
+        .titles {
+          background-color: #063d6046;
+          color: rgb(0, 0, 0);
+          span {
+            border-right: white 1px solid;
+            padding: 10px;
+            text-transform: capitalize;
+          }
+        }
+        .formis {
+          padding: 5px;
+          background-color: #e1e1e1;
+          input,
+          select {
+            padding: 10px;
+          }
+        }
+      }
+      .titles {
+        background-color: #063d60fd;
+        color: white;
+        span {
+          border-right: white 1px solid;
+          padding: 10px;
+          text-transform: capitalize;
+        }
+      }
+      .students-list {
+        .studentl {
+          .fah {
+            padding: 10px;
+          }
+          .photo {
+            width: 60px;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

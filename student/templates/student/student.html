@@ -1,0 +1,79 @@
+{% extends 'dashboard/dashboard.html' %}
+<!--just stop going -->
+{% block title %}{{student.first_name}}{% endblock %}
+<!--just stop going -->
+{% block content %}
+<div class="student-page">
+  <div class="student">
+    <div class="top flex"><h1>{{student.first_name}}'s Profile</h1>
+    <a href="{% url 'studentupdate' student.id %}" class="btn">Update profile</a>
+    </div>
+
+    <hr />
+    <div class="student-details flex">
+      <div class="profile-pic">
+        <img src="{{ student.passport_picture.url}}" alt="" />
+      </div>
+      <div class="personal-info">
+        <h3>Student info</h3>
+        <div class="details">
+          <div class="element grid2">
+            <span>Names :</span>
+            <span>{{student.first_name}} {{student.last_name}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Class :</span>
+            <span>{{student.classroom}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Gender :</span>
+            <span>{{student.gender}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Date of Birth :</span>
+            <span>{{student.date_of_birth}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Admission Date :</span>
+            <span>{{student.join_date}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Hobby :</span>
+            <span>{{student.interests}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="personal-info">
+        <h3>Parent info</h3>
+        <div class="details">
+          <div class="element grid2">
+            <span>Names :</span>
+            <span>{{student.Guardian}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Occupation :</span>
+            <span>{{student.occupation}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Home Address :</span>
+            <span>{{student.address}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Phone number :</span>
+            <span>{{student.phone}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Email :</span>
+            <span>{{student.email}}</span>
+          </div>
+          <div class="element grid2">
+            <span>Other contact :</span>
+            <span>{{student.other_contact}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,68 @@
+$color: #063e60;
+
+.create-student-page {
+  width: 100%;
+  .new-student {
+    background-color: #fff;
+    // padding: 10px;
+    h1 {
+      font-size: 2em;
+      text-transform: capitalize;
+      font-weight: 500;
+      padding: 20px;
+      color: $color;
+    }
+    hr {
+      border: solid 1px #96969626;
+    }
+    .student-form {
+      padding: 20px;
+      .add-student {
+        h3 {
+          font-size: 1.5em;
+          text-transform: capitalize;
+          font-weight: 500;
+        }
+        hr {
+          border: solid 3px $color;
+          width: 100px;
+          margin: 10px 0 10px 0;
+        }
+        .fields {
+          padding: 20px 0;
+          .field {
+            width: 100%;
+            .label {
+              font-size: 1em;
+              text-transform: capitalize;
+              font-weight: 400;
+              margin: 5px 0;
+            }
+            .fieldplace {
+              width: 100%;
+              input,
+              select {
+                width: 100%;
+                padding: 8px 10px;
+                outline: none;
+                border: 0;
+                background-color: #bfbfbf;
+                &:focus {
+                  border-bottom: solid 2px $color;
+                }
+              }
+            }
+          }
+        }
+        button {
+          padding: 10px;
+          background-color: $color;
+          color: white;
+          text-transform: capitalize;
+          font-size: 17px;
+          border: 0;
+        }
+      }
+    }
+  }
+}

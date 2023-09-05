@@ -1,0 +1,10 @@
+{% extends 'dashboard/dashboard.html' %}
+<!--blovk content-->
+{% block content %}
+<div class="attendance">
+  <form action="" method="POST" class="form-ctrl">
+    {% csrf_token %} {{form.as_div }}
+    <input type="submit">
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends 'dashboard/dashboard.html' %}
+
+<!--just stop going -->
+{% block title %}New student{% endblock %}
+<!--just stop going -->
+{% block content %}
+
+<div class="create-student-page">
+  <div class="new-student">
+    <h1>Add new student</h1>
+    <hr />
+    <div class="student-form">
+      <form
+        action=""
+        method="POST"
+        enctype="multipart/form-data"
+        class="add-student"
+      >
+        {% csrf_token %}
+        <h3>student's information</h3>
+        <hr />
+        <div class="fields grid3">
+          <div class="field">
+            <h5 class="label">First name</h5>
+            <div class="fieldplace">{{form.first_name}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Last name</h5>
+            <div class="fieldplace">{{form.last_name}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Class</h5>
+            <div class="fieldplace">{{form.classroom}}</div>
+          </div>
+
+          <div class="field">
+            <h5 class="label">Date of birth</h5>
+            <div class="fieldplace">
+              <input
+                type="date"
+                name="date_of_birth"
+                required=""
+                id="id_date_of_birth"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <h5 class="label">Hobbies</h5>
+            <div class="fieldplace">{{form.interests}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Sex</h5>
+            <div class="fieldplace">{{form.gender}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Picture</h5>
+            <div class="fieldplace">{{form.passport_picture}}</div>
+          </div>
+        </div>
+        <h3>Parent's information</h3>
+        <hr />
+        <div class="fields grid3">
+          <div class="field">
+            <h5 class="label">Guardian/parent's name</h5>
+            <div class="fieldplace">{{form.Guardian}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Occupation</h5>
+            <div class="fieldplace">{{form.occupation}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Email address</h5>
+            <div class="fieldplace">{{form.email}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Phone number</h5>
+            <div class="fieldplace">{{form.phone}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Home address</h5>
+            <div class="fieldplace">{{form.interests}}</div>
+          </div>
+          <div class="field">
+            <h5 class="label">Other contact</h5>
+            <div class="fieldplace">{{form.other_contact}}</div>
+          </div>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %} z

@@ -1,0 +1,21 @@
+{% extends 'dashboard/dashboard.html' %}
+<!--blovk content-->
+{% block content %}
+
+<h1>Attendance Report</h1>
+<div class="attendance-grid grid4">
+  <div class="head-titles"><span>Date</span></div>
+  <div class="head-titles"><span>Student</span></div>
+  <div class="head-titles"><span>Class</span></div>
+  <div class="head-titles"><span>Status</span></div>
+</div>
+<div class="attendance-grid grid4">
+  {% for data in attendance_data %}
+  <div class="head-titles"><span>{{ data.date }}</span></div>
+  <div class="head-titles"><span>{{ data.student.first_name }}</span></div>
+  <div class="head-titles"><span>{{data.student.classroom }}</span></div>
+  <div class="head-titles"><span>{{ data.status }}</span></div>
+  {% endfor %}
+</div>
+                    
+{% endblock %}

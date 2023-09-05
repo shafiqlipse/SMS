@@ -1,0 +1,69 @@
+.students-page {
+  width: 100%;
+}
+.students-page .students {
+  background-color: #fff;
+}
+.students-page .students .top {
+  padding: 20px;
+}
+.students-page .students .top h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #063e60;
+}
+.students-page .students .top .btn {
+  padding: 10px;
+  border: 0;
+  background-color: #063e60;
+  color: white;
+}
+.students-page .students hr {
+  border: solid 1px rgba(150, 150, 150, 0.1490196078);
+}
+.students-page .students .student-list .filter {
+  padding: 10px;
+}
+.students-page .students .student-list .filter h3 {
+  font-size: 0.9em;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #063e60;
+}
+.students-page .students .student-list .filter .titles {
+  background-color: rgba(6, 61, 96, 0.2745098039);
+  color: rgb(0, 0, 0);
+}
+.students-page .students .student-list .filter .titles span {
+  border-right: white 1px solid;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.students-page .students .student-list .filter .formis {
+  padding: 5px;
+  background-color: #e1e1e1;
+}
+.students-page .students .student-list .filter .formis input,
+.students-page .students .student-list .filter .formis select {
+  padding: 10px;
+}
+.students-page .students .student-list .titles {
+  background-color: rgba(6, 61, 96, 0.9921568627);
+  color: white;
+}
+.students-page .students .student-list .titles span {
+  border-right: white 1px solid;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.students-page .students .student-list .students-list .studentl .fah {
+  padding: 10px;
+}
+.students-page .students .student-list .students-list .studentl .photo {
+  width: 60px;
+}
+.students-page .students .student-list .students-list .studentl .photo img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=studentlist.css.map */
