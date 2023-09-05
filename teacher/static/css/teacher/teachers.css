@@ -1,0 +1,69 @@
+.teachers-page {
+  width: 100%;
+}
+.teachers-page .teachers {
+  background-color: #fff;
+}
+.teachers-page .teachers .top {
+  padding: 20px;
+}
+.teachers-page .teachers .top h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #063e60;
+}
+.teachers-page .teachers .top .btn {
+  padding: 10px;
+  border: 0;
+  background-color: #063e60;
+  color: white;
+}
+.teachers-page .teachers hr {
+  border: solid 1px rgba(150, 150, 150, 0.1490196078);
+}
+.teachers-page .teachers .teacher-list .filter {
+  padding: 10px;
+}
+.teachers-page .teachers .teacher-list .filter h3 {
+  font-size: 0.9em;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #063e60;
+}
+.teachers-page .teachers .teacher-list .filter .titles {
+  background-color: rgba(6, 61, 96, 0.2745098039);
+  color: rgb(0, 0, 0);
+}
+.teachers-page .teachers .teacher-list .filter .titles span {
+  border-right: white 1px solid;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.teachers-page .teachers .teacher-list .filter .formis {
+  padding: 5px;
+  background-color: #e1e1e1;
+}
+.teachers-page .teachers .teacher-list .filter .formis input,
+.teachers-page .teachers .teacher-list .filter .formis select {
+  padding: 10px;
+}
+.teachers-page .teachers .teacher-list .titles {
+  background-color: rgba(6, 61, 96, 0.9921568627);
+  color: white;
+}
+.teachers-page .teachers .teacher-list .titles span {
+  border-right: white 1px solid;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.teachers-page .teachers .teacher-list .teachers-list .teacherl .fah {
+  padding: 10px;
+}
+.teachers-page .teachers .teacher-list .teachers-list .teacherl .photo {
+  width: 60px;
+}
+.teachers-page .teachers .teacher-list .teachers-list .teacherl .photo img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=teachers.css.map */

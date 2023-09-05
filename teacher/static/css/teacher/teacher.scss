@@ -1,0 +1,65 @@
+$color: #063e60;
+
+.profile-page {
+  width: 100%;
+  .profile {
+    background-color: #fff;
+    // padding: 10px;
+    .top {
+      padding: 20px;
+      h1 {
+        font-size: 2em;
+        text-transform: capitalize;
+        font-weight: 500;
+
+        color: $color;
+      }
+      .btn{
+        padding: 10px;
+        border: 0;
+        background-color: $color;
+        color: white;
+      }
+    }
+    hr {
+      border: solid 1px #96969626;
+    }
+    .profile-details {
+      padding: 20px;
+      align-items: flex-start;
+      .profile-pic {
+        width: 300px;
+        background-color: #8f8f8f;
+        img {
+          width: 100%;
+        }
+      }
+      .personal-info {
+        h3 {
+          font-size: 1.2em;
+          text-transform: capitalize;
+          font-weight: 500;
+          padding: 20px 0;
+          color: $color;
+        }
+        .details {
+          .element {
+            margin: 10px 0;
+            border-bottom: #063d6048 solid 1px;
+            padding: 0 0 10px 0;
+            span {
+              color: $color;
+              font-size: 1.1em;
+              text-transform: capitalize;
+              &:first-child {
+                font-weight: bold;
+                color: black;
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

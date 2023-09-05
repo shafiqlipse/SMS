@@ -1,0 +1,57 @@
+.profile-page {
+  width: 100%;
+}
+.profile-page .profile {
+  background-color: #fff;
+}
+.profile-page .profile .top {
+  padding: 20px;
+}
+.profile-page .profile .top h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #063e60;
+}
+.profile-page .profile .top .btn {
+  padding: 10px;
+  border: 0;
+  background-color: #063e60;
+  color: white;
+}
+.profile-page .profile hr {
+  border: solid 1px rgba(150, 150, 150, 0.1490196078);
+}
+.profile-page .profile .profile-details {
+  padding: 20px;
+  align-items: flex-start;
+}
+.profile-page .profile .profile-details .profile-pic {
+  width: 300px;
+  background-color: #8f8f8f;
+}
+.profile-page .profile .profile-details .profile-pic img {
+  width: 100%;
+}
+.profile-page .profile .profile-details .personal-info h3 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 20px 0;
+  color: #063e60;
+}
+.profile-page .profile .profile-details .personal-info .details .element {
+  margin: 10px 0;
+  border-bottom: rgba(6, 61, 96, 0.2823529412) solid 1px;
+  padding: 0 0 10px 0;
+}
+.profile-page .profile .profile-details .personal-info .details .element span {
+  color: #063e60;
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
+.profile-page .profile .profile-details .personal-info .details .element span:first-child {
+  font-weight: bold;
+  color: black;
+  font-size: 0.9em;
+}/*# sourceMappingURL=teacher.css.map */

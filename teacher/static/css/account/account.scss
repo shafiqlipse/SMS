@@ -1,0 +1,72 @@
+.account {
+  max-width: 1490px;
+  width: 100%;
+  margin: 0 auto;
+  //   position: relative;
+  //   align-items: center;
+  justify-content: center;
+  .flex-account {
+    width: 70%;
+    background-color: #eee;
+    margin-top: 100px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      margin: 10px 0;
+    }
+    @media (max-width: 998px) {
+      width: 100%;
+    }
+    .lefta {
+      width: 50%;
+      padding: 20px;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      img {
+        width: 60%;
+        margin: 20px 60px;
+      }
+      p {
+        text-align: center;
+        margin: 10px;
+      }
+      h1 {
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+    }
+    .left {
+      width: 50%;
+      padding: 20px;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      form {
+        width: 100%;
+        padding: 40px;
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+        }
+        .mb-3 {
+          width: 100%;
+          input,
+          select,
+          button {
+            width: 100%;
+            padding: 10px;
+          }
+          span {
+            margin: 10px 0 5px 0;
+          }
+        }
+      }
+    }
+  }
+}

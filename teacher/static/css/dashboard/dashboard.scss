@@ -1,0 +1,133 @@
+$color: #063e60;
+
+.dashboardd {
+  .dash-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    .sidebar {
+      flex: 0 0 50px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      background-color: $color;
+      color: White;
+      .sidebar-nav {
+        width: 100%;
+        padding: 40px 10px;
+        list-style: none;
+        .nav-item {
+          padding: 5px;
+
+          .navlink {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: inherit;
+            &:hover {
+              background-color: #d5d5d5;
+              border-radius: 5px;
+              // filter: drop-shadow(1px 1px 1px #ccc);
+              color: $color;
+            }
+            i {
+              width: 30px;
+              padding: 5px;
+              font-size: 15px;
+            }
+            .nav-text {
+              display: none;
+              font-size: 14px;
+            }
+          }
+
+          .navlist {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            .listlink {
+              margin-left: 10px;
+              margin: 5px;
+              color: #919191;
+              font-size: 13px;
+              i {
+                width: 25px;
+                color: $color;
+              }
+              &:hover {
+                span {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-area {
+      flex: 1;
+
+      .top-meain {
+        padding: 20px;
+        background-color: #ffffff;
+        width: 100%;
+        position: sticky;
+        top: 0;
+
+        // search
+        .search-bar {
+          width: 400px;
+          @media (max-width: 768px) {
+            display: none;
+          }
+          .search {
+            width: 100%;
+            background-color: #fff;
+
+            overflow: hidden;
+            box-shadow: 1px 1px 10px 1px #999999;
+            select,
+            input,
+            button {
+              padding: 10px;
+              border: 0;
+              outline: none;
+            }
+            button {
+              background-color: $color;
+              color: #fff;
+            }
+          }
+        }
+
+        // account
+        .account {
+          width: 100px;
+          .account-link {
+            a {
+              img {
+                width: 29px;
+                height: 29px;
+                padding: 0;
+              }
+              i {
+                padding: 5px;
+                font-size: 16px;
+                color: $color;
+                background-color: rgb(213, 213, 213);
+              }
+            }
+          }
+        }
+      }
+
+      .content-area {
+        padding: 20px;
+        background-color: #e9e8e8;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
+  }
+}

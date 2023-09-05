@@ -1,0 +1,104 @@
+$color: #063e60;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  max-width: 1600px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-family: lexend deca;
+}
+a {
+  text-decoration: none;
+  //   color: $color;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 17px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (max-width: 508px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 508px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 508px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 508px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 508px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 508px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.dark {
+  background-color: $color;
+  color: White;
+}
+
+.light {
+  background-color: White;
+  color: $color;
+}

@@ -1,0 +1,79 @@
+.account {
+  max-width: 1490px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.account .flex-account {
+  width: 70%;
+  background-color: #eee;
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .account .flex-account {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 998px) {
+  .account .flex-account {
+    width: 100%;
+  }
+}
+.account .flex-account .lefta {
+  width: 50%;
+  padding: 20px;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .account .flex-account .lefta {
+    width: 100%;
+  }
+}
+.account .flex-account .lefta img {
+  width: 60%;
+  margin: 20px 60px;
+}
+.account .flex-account .lefta p {
+  text-align: center;
+  margin: 10px;
+}
+.account .flex-account .lefta h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.account .flex-account .left {
+  width: 50%;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .account .flex-account .left {
+    width: 100%;
+  }
+}
+.account .flex-account .left form {
+  width: 100%;
+  padding: 40px;
+}
+@media (max-width: 768px) {
+  .account .flex-account .left form {
+    padding: 10px;
+  }
+}
+.account .flex-account .left form button {
+  width: 100%;
+  padding: 10px;
+}
+.account .flex-account .left form .mb-3 {
+  width: 100%;
+}
+.account .flex-account .left form .mb-3 input,
+.account .flex-account .left form .mb-3 select,
+.account .flex-account .left form .mb-3 button {
+  width: 100%;
+  padding: 10px;
+}
+.account .flex-account .left form .mb-3 span {
+  margin: 10px 0 5px 0;
+}/*# sourceMappingURL=account.css.map */

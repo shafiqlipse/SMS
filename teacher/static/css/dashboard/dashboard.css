@@ -1,0 +1,117 @@
+.dashboardd .dash-container {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dashboardd .dash-container .sidebar {
+  flex: 0 0 50px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: #063e60;
+  color: White;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav {
+  width: 100%;
+  padding: 40px 10px;
+  list-style: none;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item {
+  padding: 5px;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item .navlink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item .navlink:hover {
+  background-color: #d5d5d5;
+  border-radius: 5px;
+  color: #063e60;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item .navlink i {
+  width: 30px;
+  padding: 5px;
+  font-size: 15px;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item .navlink .nav-text {
+  display: none;
+  font-size: 14px;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item .navlist {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item .navlist .listlink {
+  margin-left: 10px;
+  margin: 5px;
+  color: #919191;
+  font-size: 13px;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item .navlist .listlink i {
+  width: 25px;
+  color: #063e60;
+}
+.dashboardd .dash-container .sidebar .sidebar-nav .nav-item .navlist .listlink:hover span {
+  color: white;
+}
+.dashboardd .dash-container .main-area {
+  flex: 1;
+}
+.dashboardd .dash-container .main-area .top-meain {
+  padding: 20px;
+  background-color: #ffffff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.dashboardd .dash-container .main-area .top-meain .search-bar {
+  width: 400px;
+}
+@media (max-width: 768px) {
+  .dashboardd .dash-container .main-area .top-meain .search-bar {
+    display: none;
+  }
+}
+.dashboardd .dash-container .main-area .top-meain .search-bar .search {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px 1px #999999;
+}
+.dashboardd .dash-container .main-area .top-meain .search-bar .search select,
+.dashboardd .dash-container .main-area .top-meain .search-bar .search input,
+.dashboardd .dash-container .main-area .top-meain .search-bar .search button {
+  padding: 10px;
+  border: 0;
+  outline: none;
+}
+.dashboardd .dash-container .main-area .top-meain .search-bar .search button {
+  background-color: #063e60;
+  color: #fff;
+}
+.dashboardd .dash-container .main-area .top-meain .account {
+  width: 100px;
+}
+.dashboardd .dash-container .main-area .top-meain .account .account-link a img {
+  width: 29px;
+  height: 29px;
+  padding: 0;
+}
+.dashboardd .dash-container .main-area .top-meain .account .account-link a i {
+  padding: 5px;
+  font-size: 16px;
+  color: #063e60;
+  background-color: rgb(213, 213, 213);
+}
+.dashboardd .dash-container .main-area .content-area {
+  padding: 20px;
+  background-color: #e9e8e8;
+}
+@media (max-width: 768px) {
+  .dashboardd .dash-container .main-area {
+    width: 100%;
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=dashboard.css.map */
